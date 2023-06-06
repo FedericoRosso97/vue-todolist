@@ -5,7 +5,7 @@ createApp({
         return{
             toDo:[
                 {
-                    text:'comprare caramelle',
+                    text:'comprare le caramelle',
                     done:true,
                 },
                 {
@@ -21,17 +21,18 @@ createApp({
                     done:true,
                 },
                 {
-                    text:'',
+                    text:'cucinare',
                     done:true,
                 },
                 {
-                    text:'',
+                    text:'bollire i fagioli',
                     done:true,
                 },
+              
             ],
             methods:{
-
-            }
+        
+            },
         }
         },
 }).mount('#app')

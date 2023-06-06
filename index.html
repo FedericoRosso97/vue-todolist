@@ -13,8 +13,9 @@
         <main>
             <h1>TO DO LIST!</h1>
             <ul>
-                <li v-for="items in toDo">
+                <li v-for="items in toDo" :class="{ taskDone : items.done }">
                     {{items.text}}
+                    <p>{{items.done}}</p>
                 </li>
             </ul>
         </main>

@@ -1,5 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 main{
     width: 85vw;
     margin: 0 auto;
     text-align: center;
+}
+ul{
+    list-style-type:none;
+    text-align: center;
+    border: 1px solid black;
+}
+
+li{
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin-bottom: 1.5rem;
+}
+
+.taskDone {
+    text-decoration: line-through;
 }
