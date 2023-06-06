@@ -9,7 +9,17 @@
 </head>
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <div id="app"></div>
+    <div id="app">
+        <main>
+            <h1>TO DO LIST!</h1>
+            <ul>
+                <li v-for="items in toDo">
+                    {{items.text}}
+                </li>
+            </ul>
+        </main>
+        
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
