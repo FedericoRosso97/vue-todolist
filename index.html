@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +13,15 @@
         <main>
             <h1>TO DO LIST!</h1>
             <ul>
-                <li v-for="items in toDo" :class="{ taskDone : items.done }">
-                    {{items.text}}
-                    <p>{{items.done}}</p>
+                <li v-for="(items,index) in toDo" >
+                   <span :class="{ taskDone : items.done }">{{items.text}}</span> 
+                   <span class="delete" @click="Delete(index)">X</span>
                 </li>
             </ul>
+            <div class="button">
+                <input type="text" v-model="text">
+                <button @click="newTask()">Aggiungi</button>
+            </div>
         </main>
         
     </div>
